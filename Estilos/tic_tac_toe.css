@@ -1,0 +1,116 @@
+/*{
+    margin: 0;
+padding: 0;                       
+box-sizing: border-box; 
+color: blue;
+}*/
+body{background-color: rgb(255, 205, 143);}
+
+.contenedor{
+height: 700px;
+max-width: 1000px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;                                     /*formato al margen*/
+gap: 10px;
+text-align: center;
+
+}
+
+/*margen de todos los cuadros*/
+
+.cuadricula{
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 0;
+
+}
+
+/* formato dentro de la cuadricula*/
+
+.cuadro{
+
+   width:4rem; 
+height: 4rem;
+border: 1px solid rgb(89, 186, 128);
+text-align: center;
+ /*ponerle colo*/
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(79, 61, 45);
+
+
+transition: background-color ease-in 0.2s;
+
+background:rgb(76, 67, 67);
+}
+
+.cuadro:hover{      /*cambiar el color del cuadro al tocarlo*/
+background: white;
+
+}
+
+/*formato al boton*/
+.boton{
+ 
+display: inline-flex;
+padding: 15px 15px ;
+background: rgb(177, 128, 233);
+font-size: 20px;
+/*ponerle color ala lettra*/
+cursor: pointer;      /*para colocar la maniitoo de inicia*/
+justify-content: center;
+font-weight: bolder;        /* poner negrita la letra*/
+transition: color ease-out 0.3s;
+
+border-radius: 50px;  /*forma al boton*/
+ /* sombreado: box-shadow: 30px 30px;*/
+}
+
+.boton:hover{     /*cambiar el color al tocar el boton*/
+
+background: rgb(56, 110, 56);
+color: rgb(247, 237, 237);
+
+border: 1px solid black;   /*darle borde al boton*/
+
+}
+
+/*contenedor para titulo el juego, para la x vs o*/
+
+
+.turno{
+display:grid;
+border-style: solid;
+width: 80px;
+height: 30px;
+
+font-size: 25px;
+
+}
+
+.turnoo{
+
+    border:solid;
+    width: 80px;
+    height: 30px;
+    font-size: 25px;
+margin-top: 20px;
+
+}
+
+/*cuadro de color al tocar x u o*/
+
+.botondecolor{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 80px;
+height: 40px;
+background-color: red;
+
+z-index: -2;
+
+}
