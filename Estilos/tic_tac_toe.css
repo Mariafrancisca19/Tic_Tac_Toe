@@ -4,7 +4,14 @@ padding: 0;
 box-sizing: border-box; 
 color: blue;
 }*/
-body{background-color: rgb(255, 205, 143);}
+
+body{/*background-color: rgb(255, 205, 143);*/
+font-size: 20px;
+
+background-image: url(/Imagenes/.jpg);
+background-repeat: no-repeat;
+background-size: 2200px 1200px;
+}
 
 .contenedor{
 height: 700px;
@@ -56,7 +63,7 @@ background: white;
 .boton{
  
 display: inline-flex;
-padding: 15px 15px ;
+padding: 20px 20px ;
 background: rgb(177, 128, 233);
 font-size: 20px;
 /*ponerle color ala lettra*/
@@ -78,6 +85,30 @@ border: 1px solid black;   /*darle borde al boton*/
 
 }
 
+/*fotmato al boton iniciar*/
+
+.inicio{
+background: cadetblue;   /*color al boton*/
+color: white;
+border-radius: 50px;
+cursor: pointer;
+font-size: 30px;
+padding: 20px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*contenedor para titulo el juego, para la x vs o*/
 
 
@@ -85,32 +116,56 @@ border: 1px solid black;   /*darle borde al boton*/
 display:grid;
 border-style: solid;
 width: 80px;
-height: 30px;
-
+height: 30px;                /* color al boton de x */
 font-size: 25px;
 
-}
+background:rgb(134, 174, 182) ;
+color: black; 
 
+margin: auto;
+
+}
+.turno:hover{
+    background: #fff176;
+color: black;
+}
 .turnoo{
 
     border:solid;
-    width: 80px;
+    width: 80px;               /* color al boton de o */
     height: 30px;
     font-size: 25px;
 margin-top: 20px;
+
+background:rgb(134, 174, 182) ;
+color: black; 
+
+}
+
+.turnoo:hover{
+    background: #fff176;
+color: black;
 
 }
 
 /*cuadro de color al tocar x u o*/
 
-.botondecolor{
+/*.botondecolor{
 position: absolute;
 bottom: 0;
 left: 0;
-width: 80px;
+width: 80px;          /* yaa noo
 height: 40px;
-background-color: red;
 
 z-index: -2;
+
+}  */
+
+
+.cont-turnos{
+
+display: flex;
+flex-direction: row;
+
 
 }
