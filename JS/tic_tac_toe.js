@@ -1,4 +1,4 @@
-/*let casilla1= document.getElementById("uno")
+let casilla1= document.getElementById("uno")
 let casilla2= document.getElementById("dos")
 let casilla3= document.getElementById("tres")
 let casilla4= document.getElementById("cuatro")
@@ -6,42 +6,78 @@ let casilla5= document.getElementById("cinco")
 let casilla6= document.getElementById("seis")
 let casilla7= document.getElementById("siete")
 let casilla8= document.getElementById("ocho")
-let casilla9= document.getElementById("nueve")*/
+let casilla9= document.getElementById("nueve")
  
-let iniciar=document.getElementById("inicio")  /*boton iniciar*/
-let volverajugar=document.getElementById("again")   /*reiniciar*/
 
-let cuadrados = document.querySelectorAll(".cuadro"); /*contenedor de todos las casillas*/
-const x = '❌'
-const o = '⭕'
-let turno = 'jugador1'
+/*jugador uno*/
+let arreglo=[casilla1,casilla2,casilla3,casilla4,casilla5,casilla6,casilla7,casilla8,casilla9]
 
-cuadrados.forEach((cuadros,i)=>{
-    cuadros.addEventListener('click', () => {
-        //console.log(cuadros,i)
-    cuadros.innerText = turno === 'jugador1'? x : o;
-    turno = turno === 'jugador1'? 'pancha': 'jugador1';
-    console.log(cuadros)
+arreglo.forEach(element => element.addEventListener("click",function(){
+    element.innerHTML="❌"
+  
+}));
+
+
+/*maquina , jugador 2*/
+
+
+
+
+
+
+
+
+
+
+/*const espaciosVacios = boxArray.filter(box => box.innerHTML === "");
+    const randomIndex = Math.floor(Math.random() * espaciosVacios.length);
+    espaciosVacios[randomIndex].innerHTML = "⭕";*/
+
+
+
+
+/*let flag=false.document.getElementById
+while (!flag) {       
+element.Match.random
+}*/
+
+
+
+
+// let iniciar=document.getElementById("inicio")  /*boton iniciar*/
+// let volverajugar=document.getElementById("again")   /*reiniciar*/
+
+// let cuadrados = document.querySelectorAll(".cuadro"); /*contenedor de todos las casillas*/
+// const x = '❌'
+// const o = '⭕'
+// let turno = 'jugador1'
+
+// cuadrados.forEach((cuadros,i)=>{
+//     cuadros.addEventListener('click', () => {
+//         //console.log(cuadros,i)
+//     cuadros.innerText = turno === 'jugador1'? x : o;
+//     turno = turno === 'jugador1'? 'pancha': 'jugador1';
+//     console.log(cuadros)
         
 
-    })
-})
+//     })
+// })
 
 
-inicio.addEventListener("click", function (e) {
-    e.preventDefault
-})
-again.addEventListener("click",function (e) {
-    e.preventDefault
-})
+// inicio.addEventListener("click", function (e) {
+//     e.preventDefault
+// })
+// again.addEventListener("click",function (e) {
+//     e.preventDefault
+// })
 
 
-function chequeo(a,b,c) {
+// function chequeo(a,b,c) {
 
-    if (cuadro[a].innerHTML.length&&cuadro[a].innerHTML==cuadro[b].innerHTML&&cuadro[b].innerHTML==cuadro[c].innerHTML ) {
-        alert("winner")
-    }
+//     if (cuadro[a].innerHTML.length&&cuadro[a].innerHTML==cuadro[b].innerHTML&&cuadro[b].innerHTML==cuadro[c].innerHTML ) {
+//         alert("winner")
+//     }
     
-}
+// }
 
 

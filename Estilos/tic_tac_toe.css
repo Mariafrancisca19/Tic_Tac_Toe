@@ -7,10 +7,13 @@ color: blue;
 
 body{/*background-color: rgb(255, 205, 143);*/
 font-size: 20px;
+background-color: #fff176;
 
-background-image: url(/Imagenes/.jpg);
+
+
+/*background-image: url(/Imagenes/.jpg);
 background-repeat: no-repeat;
-background-size: 2200px 1200px;
+background-size: 2200px 1200px;*/
 }
 
 .contenedor{
@@ -63,7 +66,7 @@ background: white;
 .boton{
  
 display: inline-flex;
-padding: 20px 20px ;
+padding: 20px 20px 20px ;
 background: rgb(177, 128, 233);
 font-size: 20px;
 /*ponerle color ala lettra*/
