@@ -17,15 +17,15 @@ margin-top: 300px;
 font-size: 50px;   /*tamano de la letra*/
 font-style: oblique;
 font-family: Georgia, 'Times New Roman', Times, serif;
-color: rgb(169, 50, 50);
-
+color: white;
+margin-top: 450px;
 
 
 }
 
 .boton{
-background-color: rgb(255, 255, 145);
-color: rgb(9, 8, 8);
+background-color: rgb(255, 137, 165);
+color: rgb(248, 237, 237);
 font-size: 30px;                                         /* formato al boton*/
 font-style: oblique;
 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,5 +54,62 @@ color: rgb(255, 255, 255);
 
     text-decoration: none;
                                /*quitarle el azul y el color al url*/
-color: black;
+color: rgb(0, 0, 0);
+}
+
+
+.player1{
+
+    background-color: rgb(255, 137, 165);
+    color: rgb(248, 237, 237);
+    font-size: 30px;                                         /* formato al boton*/
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 60px;
+    
+    border-radius: 20px 20px 20px;  /*forma al boton*/
+    
+    cursor: pointer;     /*cursor al tocar el boton*/
+    
+    box-shadow: 20px 20px 20px;  /*sombreado del boton de iniciar*/
+    
+margin-left: 1010px;
+margin-top: 50px;
+
+}
+
+.player1 a{
+
+    text-decoration: none;
+                               /*quitarle el azul y el color al url*/
+color: rgb(0, 0, 0);
+}
+
+.player2{
+
+    background-color: rgb(255, 137, 165);
+    color: rgb(248, 237, 237);
+    font-size: 30px;                                         /* formato al boton*/
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 60px;
+    
+    border-radius: 20px 20px 20px;  /*forma al boton*/
+    
+    cursor: pointer;     /*cursor al tocar el boton*/
+    
+    box-shadow: 20px 20px 20px;  /*sombreado del boton de iniciar*/
+    
+margin-left: 1010px;
+margin-top: 50px;
+
+}
+
+.player2 a{
+
+    text-decoration: none;
+                               /*quitarle el azul y el color al url*/
+color: rgb(0, 0, 0);
 }
