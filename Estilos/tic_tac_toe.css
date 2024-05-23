@@ -68,7 +68,7 @@ background: white;
 display: inline-flex;
 padding: 20px 20px 20px ;
 background: rgb(177, 128, 233);
-font-size: 20px;
+font-size: 30px;
 /*ponerle color ala lettra*/
 cursor: pointer;      /*para colocar la maniitoo de inicia*/
 justify-content: center;
@@ -90,25 +90,16 @@ border: 1px solid black;   /*darle borde al boton*/
 
 /*fotmato al boton iniciar*/
 
-.inicio{
+
+/*.inicio{
 background: cadetblue;   /*color al boton*/
-color: white;
+/*color: white;
 border-radius: 50px;
 cursor: pointer;
 font-size: 30px;
 padding: 20px 20px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
