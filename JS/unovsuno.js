@@ -12,3 +12,11 @@ let turno = 'jugador1'
         
    })
 })
+
+
+
+let reiniciar = document.getElementById("again")   /*boton reiniciar*/
+
+reiniciar.addEventListener("click",function () {
+  location.reload()
+})

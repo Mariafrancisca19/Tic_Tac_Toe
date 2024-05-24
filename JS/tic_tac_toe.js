@@ -55,7 +55,7 @@ function victoria(){
     if (arreglo[a].innerHTML && arreglo[a].innerHTML == arreglo[b].innerHTML && arreglo[a].innerHTML==arreglo[c].innerHTML) {
       quienGano=arreglo[a].innerHTML
       console.log(quienGano);
-      alert("GANADOR")
+      alert("FELICIDADES HAS GANADO")
       return true
     }  
   }

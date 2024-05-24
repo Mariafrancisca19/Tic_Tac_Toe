@@ -1,20 +1,18 @@
-/*{
-    margin: 0;
-padding: 0;                       
-box-sizing: border-box; 
-color: blue;
-}*/
 
-body{/*background-color: rgb(255, 205, 143);*/
+
+body{
 font-size: 20px;
-background-color: #fff176;
+background-image: url(/Imagenes/hera\ de\ hielo.jpg);
 
-
-
-/*background-image: url(/Imagenes/.jpg);
 background-repeat: no-repeat;
-background-size: 2200px 1200px;*/
+background-size: 2200px 1200px;
 }
+
+.contenedor{
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
 
 .contenedor{
 height: 700px;
@@ -41,8 +39,8 @@ gap: 0;
 
 .cuadro{
 
-   width:4rem; 
-height: 4rem;
+   width:6rem; 
+height: 6rem;
 border: 1px solid rgb(89, 186, 128);
 text-align: center;
  /*ponerle colo*/
