@@ -68,7 +68,7 @@ color: rgb(0, 0, 0);
     width: 200px;
     height: 60px;
     
-    border-radius: 20px 20px 20px;  /*forma al boton*/
+    border-radius: 20px 20px 20px;  /*forma al boton*/                   /*elimine el boton*/
     
     cursor: pointer;     /*cursor al tocar el boton*/
     

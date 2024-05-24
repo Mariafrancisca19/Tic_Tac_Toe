@@ -29,6 +29,7 @@ function juegoAleatorio() {
   let casillasVacias = arreglo.filter(texto=>texto.innerHTML=="")
   let numRandom = Math.floor(Math.random() * casillasVacias.length)
     casillasVacias[numRandom].innerHTML="⭕"
+    
 }
 
 
@@ -55,7 +56,7 @@ function victoria(){
     if (arreglo[a].innerHTML && arreglo[a].innerHTML == arreglo[b].innerHTML && arreglo[a].innerHTML==arreglo[c].innerHTML) {
       quienGano=arreglo[a].innerHTML
       console.log(quienGano);
-      alert("FELICIDADES HAS GANADO")
+      alert("FELICIDADES HAS GANADO ")
       return true
     }  
   }
@@ -83,4 +84,8 @@ reiniciar.addEventListener("click",function () {
   location.reload()
 })
 
- 
+ /*sonido al perder x*/
+
+ let sonidoA=document.getElementById("sonidoJuego")
+
+
