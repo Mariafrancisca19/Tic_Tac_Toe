@@ -29,9 +29,9 @@ text-align: center;
 /*margen de todos los cuadros*/
 
 .cuadricula{
-display: grid;
-grid-template-columns: auto auto auto;
-gap: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
 
 }
 
@@ -53,6 +53,10 @@ background-color: rgb(79, 61, 45);
 transition: background-color ease-in 0.2s;
 
 background:rgb(89, 186, 128);
+background-image: url(/Imagenes/CELESTE.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
 }
 
 .cuadro:hover{      /*cambiar el color del cuadro al tocarlo*/

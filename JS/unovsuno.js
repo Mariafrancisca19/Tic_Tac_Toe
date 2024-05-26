@@ -1,22 +1,45 @@
- let cuadrados = document.querySelectorAll(".cuadro"); /*contenedor de todos las casillas*/
-const x = '❌'
- const o = '⭕'
-let turno = 'jugador1'
+let again = document.getElementById("again")
+let cuadricula = document.getElementById("cuadricula")
+let cuadros = cuadricula.children   
 
- cuadrados.forEach((cuadros,i)=>{
-     cuadros.addEventListener('click', () => {
-        //console.log(cuadros,i)
-  cuadros.innerText = turno === 'jugador1'? x : o;
-   turno = turno === 'jugador1'? 'pancha': 'jugador1';
-   console.log(cuadros)
-        
-   })
+let turnoActual=document.getElementById("turno")
+
+/*limpair*/
+again.addEventListener("click",function () {
+    limpiar(cuadros)
 })
 
 
+for (const cuadro of cuadros) {
+    cuadro.addEventListener("click",function () {
+        cuadro.innerHTML= turnoActual.innerHTML
+        turno.innerHTML=siquienteTurno()
 
-let reiniciar = document.getElementById("again")   /*boton reiniciar*/
+    })
+    
+}
 
-reiniciar.addEventListener("click",function () {
-  location.reload()
-})
+function siquienteTurno() {
+    let turnoSiguiente=turno.innerHTML
+
+var resultado
+ 
+if (turnoSiguiente=="⭕") {
+    resultado="❌"
+
+} else{
+resultado ="⭕"
+
+}
+
+return resultado
+
+}
+
+
+function limpiar (elementos) {
+    for (let index = 0; index < elementos.length; index++) {  /* igual que el for of*/
+        const elemento = elementos[index];
+        elemento.innerHTML=""
+    }
+}

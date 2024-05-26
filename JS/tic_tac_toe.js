@@ -7,6 +7,8 @@ let casilla6= document.getElementById("cinco")
 let casilla7= document.getElementById("seis")
 let casilla8= document.getElementById("siete")
 let casilla9= document.getElementById("ocho") 
+
+
 /*jugador uno*/
 let arreglo=[casilla1,casilla2,casilla3,casilla4,casilla5,casilla6,casilla7,casilla8,casilla9]
 
@@ -57,6 +59,9 @@ function victoria(){
       quienGano=arreglo[a].innerHTML
       console.log(quienGano);
       alert("FELICIDADES HAS GANADO 🥇")
+      if(arreglo[a].innerHTML=="❌"){
+        reproAudioDerrota()
+      }
       return true
     }  
   }
@@ -85,6 +90,9 @@ reiniciar.addEventListener("click",function () {
 })
 
  /*sonido al perder x*/
-
+ let sonidito = document.getElementById("sonido")
+ function reproAudioDerrota() {
+  sonidito.play()
+}
 
 
